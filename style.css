@@ -1,0 +1,1160 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Хедер */
+.header {
+    background-color: #5dbb46; /* Зелений колір фону */
+    color: white;
+ 
+
+}
+
+/* Верхній текст */
+.header-top {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-left:-750px;
+}
+
+/* Основний блок */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+/* Контактна інформація */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 119px; /* Збільшено відступ для зміщення вправо */
+    padding-right: 20px; /* Можна додати додатковий простір, якщо потрібно */
+}
+    
+
+
+.telefon-img {
+    width: 40px;
+    height: 40px;
+}
+
+.phone-number {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.working-hours {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+/* Логотип */
+.logo {
+    position: absolute; /* Відокремлює логотип від загальної структури */
+    left: 50%; /* Вирівнювання по центру */
+    transform: translateX(-50%); /* Вирівнювання по горизонталі */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Залишає логотип поверх інших елементів */
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-top: -60px;
+}
+
+/* Порожній блок для балансування */
+.placeholder {
+    flex-grow: 1; /* Заповнює простір праворуч */
+}
+
+/* Меню */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 2px dashed gray; /* Додаємо пунктирну лінію */
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+/* Кошик */
+.cart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative; /* Для точного позиціонування */
+}
+
+.cart-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px; /* Піднімаємо іконку, додаючи відступ знизу */
+    /* Або використати позиціонування: */
+    position: relative;
+    top: -17px; /* Піднімаємо іконку на 2 пікселі */
+    left: -123px;
+    
+}
+
+/* Повідомлення кошика */
+.cart-message {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+
+.hidden {
+    display: none;
+}
+main {
+    position:absolute;/* Фіксація елемента на екрані */
+       top:196px;      /* Відстань від верхнього краю */
+          left:-20px;   /* Відстань від лівого краю */
+    width: 100%;      /* Ширина на весь екран */
+    background-color:rgb(238, 236, 236); /* Колір фону */
+    padding: 10px;
+       
+}
+.magaz{
+    font-size: 30px;
+    text-align:center;
+    margin-top: 10px;
+}
+.rek{
+    font-size: 30px;
+    text-align:center;
+    
+}
+.card {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 153px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Анімація */
+  }
+  
+  .badge {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -85px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-price {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    
+   
+  }
+  
+  
+
+  .buy-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left:5px;
+  }
+  
+  .buy-button:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+
+  }
+  .card:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+
+  .cards {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 425px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  .badges {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -80px;
+  }
+  
+  .product-images {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titles {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-prices {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+  
+    text-align: center;
+    margin-left:35px;
+    margin-bottom: 15px;
+    margin-top:0px;
+  }
+  
+  .buy-buttons {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .buy-buttons:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cards:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  
+  .cardw {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 697px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imagew {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titlew {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerw {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-pricew {
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttonw {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttonw:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardw:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardd {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 970px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imaged {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titled {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerd {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-priced{
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttond {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttond:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardd:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+
+  .cardf {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 153px;
+    margin-top:25px;
+    cursor: pointer;
+  }
+  
+  .badgef {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -85px;
+  }
+  
+  .product-imagef {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .product-titlef {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footerf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-pricef {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    
+   
+  }
+  
+  .buy-buttonf {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left:5px;
+  }
+  
+  .buy-buttonf:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardf:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+
+  .cardg {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 425px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  .badgeg {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -80px;
+  }
+  
+  .product-imageg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titleg {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footerg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-priceg {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+  
+    text-align: center;
+    margin-left:35px;
+    margin-bottom: 15px;
+    margin-top:0px;
+  }
+  
+  .buy-buttong {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .buy-buttong:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardg:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardh {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 697px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imageh {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titleh {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerh {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-priceh {
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttonh {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttonh:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardh:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardj {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 970px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imagej {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titlej {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerj {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-pricej{
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttonj {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttonj:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardj:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardk {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 153px;
+    margin-top:25px;
+    cursor: pointer;
+  }
+  
+  .badgek {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -85px;
+  }
+  
+  .product-imagek {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .product-titlek {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footerk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-pricek {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    
+   
+  }
+  
+  .buy-buttonk {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left:5px;
+  }
+  
+  .buy-buttonk:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardk:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardl {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 697px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imagel {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titlel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerl {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-pricel {
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttonl {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttonl:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardl:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardz {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 425px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  .badgez {
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+  margin-left: -80px;
+  }
+  
+  .product-imagez {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titlez {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .product-footerz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .product-pricez {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+  
+    text-align: center;
+    margin-left:35px;
+    margin-bottom: 15px;
+    margin-top:0px;
+  }
+  
+  .buy-buttonz {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .buy-buttonz:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardz:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .cardx {
+    width: 220px;
+    height:368px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 970px;
+    margin-top: -390px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .product-imagex {
+    width: 100%;
+    height: auto;
+    margin-top:35px;
+    border-radius: 5px;
+    
+  }
+  
+  .product-titlex {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:25px;
+  }
+  .product-footerx {
+    display: flex; /* Установлюємо Flexbox */
+    justify-content: space-between; /* Вирівнювання елементів по краях */
+    align-items: center; /* Вертикальне вирівнювання елементів */
+    margin-top: 10px;
+  }
+  
+  .product-pricex{
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    margin: 0; /* Вирівнюємо відступи */
+    margin-left:35px;
+  }
+  
+  .buy-buttonx {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0; /* Забираємо зайві відступи */
+    margin-right: 35px;
+  }
+  
+  .buy-buttonx:hover {
+    background-color: #45a049;
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+  }
+  .cardx:hover {
+    border-color: #45a049; /* Колір підсвічування */
+    box-shadow: 0 0 15px rgba(7, 255, 40, 0.5); /* Тінь */
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 10px; /* Зменшує відступи зліва і справа (10px), залишаючи 20px зверху та знизу */
+    margin-top: 30px; /* Додає відступ зверху */
+    background-color: white; /* Задає світлий фон */
+    border-radius: 8px;
+    width: 1047px;
+    margin-left:150px;
+    height: 170px;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 250px;
+    margin: -20px;
+}
+
+.feature-item .icon {
+    margin-bottom: 15px;
+}
+
+.feature-item .icon img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    color: #4CAF50; /* Зелений колір заголовків */
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
+}
+.certificate-title {
+  font-size: 33px;
+  margin-left:200px;
+  
+ }
+ .top{
+  margin-top: -15px;
+ }
+ .sertf{
+  margin-left: 550px;
+  margin-top: -220px;
+ }
+ .prom{
+  margin-left: 180px;
+  margin-top: 35px;
+  
+ }
+.eng:hover{
+  
+    border-color: #007BFF; /* Колір підсвічування */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Тінь */
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Основний контент займає всю доступну висоту */
+}
+
+main::after {
+  content: "";
+  display: block;
+  width: 100%; /* Лінія на всю ширину */
+  height: 3px; /* Товщина лінії */
+  background-color: green; /* Колір лінії */
+  margin-top: 25px; /* Відступ від основного контенту */
+  margin-bottom: -10px; /* Відступ між лінією і футером */
+}
